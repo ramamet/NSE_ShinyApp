@@ -1,16 +1,14 @@
 #*************************************************************************************************
 
-#*** get portfolio details from moneycontrol and create ggplot and send it to your email id
+#*** Extract current month NIFTY (CALL and PUT) options prices from www.nseindia,con 
+# Author: Ramanathan Perumal
+# mail: ramamet3@gmail.com
 
 #**************************************************************************************************
 
-#setwd("/home/ramanathan/R_example/Options")
 library(dplyr)
 library(ggplot2)
 library(RColorBrewer)
-
-#type in any browser,then you will get a "okok" while shutdown the open seleniumservers
-#http://localhost:4444/selenium-server/driver/?cmd=shutDownSeleniumServer
 
 require(RSelenium)
 RSelenium::startServer()
@@ -20,7 +18,7 @@ remDr <- remoteDriver(browserName = "phantomjs")
 remDr$open()
 
 name="NIFTY"    
-expDate="30JUN2016" # Feb contract
+expDate="30JUN2016" # June Contract
   
 
  URL=paste0("http://www.nseindia.com/live_market/dynaContent/live_watch/option_chain/optionKeys.jsp?",
