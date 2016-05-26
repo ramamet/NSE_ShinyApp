@@ -17,7 +17,6 @@ shinyServer(function(input, output) {
   # shared by the output$caption and output$mpgPlot expressions
   formulaText <- reactive({
     paste("Graingrowth simulation")
-   # paste(input$x," ~ ",input$y)
     })
 
   # Return the formula text for printing as a caption
@@ -28,7 +27,7 @@ shinyServer(function(input, output) {
   
   output$trend1Plot <- renderPlotly({
   
-  expDate="26MAY2016" 
+  expDate="30JUN2016" 
   date=format(Sys.Date(), "%d-%m-%Y")
   nr= nrow(Df)
   nr=nr*0.025
@@ -48,7 +47,6 @@ shinyServer(function(input, output) {
  
 #gg1=ggplot(Df,aes(x=strikeprice,y=call.OI),label=Df$call.ltp)+
 gg1=ggplot(Df,aes(x=strikeprice,y=call.OI))+
-  #geom_bar(stat="identity",color="darkgreen",alpha=0.1,fill="#009E73",width=0.3)+ 
    geom_bar(stat="identity",alpha=0.70,fill="#009E73",width=0.1)+ 
   coord_flip()+
   geom_text(data=NULL,label=Df$call, hjust=2.6, vjust=-1,size=nr,color="white")+
