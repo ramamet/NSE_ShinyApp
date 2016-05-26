@@ -1,3 +1,9 @@
+#++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# Author: Ramanathan Perumal
+# mail  : ramamet3@gmail.com
+#++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+# Load supported libraries 
 library(shiny)
 library(ggplot2)
 library(readr)
