@@ -1,11 +1,7 @@
 ## NIFTY options CALL/PUT analysis
---
 ##Introduction
-
 nifty_ShinyApp is a fully featured promise Rstudio shiny app with focus on webscraping Call/Put options price and visualization
-
 See the Code structure for further documentation, references and instructions. See the screenshot of the App here.
-
 --
 ##Code structure
 
