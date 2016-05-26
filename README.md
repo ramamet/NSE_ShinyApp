@@ -4,6 +4,7 @@
 nifty_ShinyApp is a fully featured promise Rstudio shiny app with focus on webscraping Call/Put options price and visualization. <br />
 See the Code structure for further documentation, references and instructions.  <br />
 Here is the screenshot of the App. <br />
+--
 ![nse_app](https://cloud.githubusercontent.com/assets/16385390/15591736/111704f6-239f-11e6-89f9-be5cc9c9188d.png)
 
 ##Code structure
