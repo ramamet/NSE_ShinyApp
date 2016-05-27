@@ -22,7 +22,7 @@ shinyServer(function(input, output) {
   # Compute the forumla text in a reactive expression since it is 
   # shared by the output$caption and output$mpgPlot expressions
   formulaText <- reactive({
-    paste("Graingrowth simulation")
+    paste("NSE India")
     })
 
   # Return the formula text for printing as a caption
